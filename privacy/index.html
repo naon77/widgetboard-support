@@ -21,11 +21,11 @@
     <p class="notice">WidgetBoardは、アカウント、広告、行動分析SDK、第三者トラッキングを使用しません。</p>
 
     <h2>アクセスするデータ</h2>
-    <p>ユーザーが許可した場合に限り、カレンダー、リマインダー、写真、位置情報へアクセスします。これらは、ユーザーが選んだモジュールをアプリとWidgetに表示する目的で使用します。</p>
+    <p>対応するモジュールが有効で、ユーザーが「実データを更新」を実行し、アクセスを許可した場合に限り、カレンダー、リマインダー、写真、位置情報へアクセスします。写真モジュールでは最新写真の縮小版をWidgetに表示します。</p>
 
     <h2>処理と保存</h2>
     <ul>
-      <li>ボード設定、選択した背景画像、Widget表示に必要な予定・リマインダー等の軽量キャッシュは、端末内のApp Group領域に保存します。</li>
+      <li>ボード設定、選択した背景画像、Widget表示に必要な予定・リマインダー・天気・最新写真の軽量キャッシュは、端末内のApp Group領域に保存します。</li>
       <li>位置情報または保存した地点の座標は、天気情報を取得するためApple WeatherKitへ送信される場合があります。</li>
       <li>サブスクリプションの購入と復元はAppleのApp Storeが処理します。WidgetBoard開発者が完全な決済情報を取得することはありません。</li>
     </ul>
@@ -34,7 +34,7 @@
     <p>WidgetBoard開発者は、個人データを自社サーバーへ収集せず、販売せず、広告目的で追跡しません。機能提供に必要なAppleのサービスを除き、第三者へデータを共有しません。</p>
 
     <h2>管理と削除</h2>
-    <p>アクセス権はiOSの設定からいつでも変更できます。保存したボードはアプリ内で削除できます。アプリを削除すると、端末内に保存されたWidgetBoardのデータもiOSの管理に従って削除されます。</p>
+    <p>アクセス権はiOSの設定からいつでも変更できます。実データキャッシュは次回更新、設定画面の「実データキャッシュを削除」、またはアプリ削除まで端末内に保持されます。キャッシュ削除では予定、リマインダー、天気、最新写真を削除し、ボード設定と選択した背景写真は残します。保存したボードはアプリ内で削除できます。</p>
 
     <h2>お問い合わせ</h2>
     <p>プライバシーに関する質問は、<a href="https://github.com/naon77/widgetboard-support/issues">WidgetBoard SupportのIssues</a>へお寄せください。公開投稿に予定、リマインダー、写真、位置情報などの個人情報を含めないでください。</p>
@@ -50,11 +50,11 @@
       <p class="notice">WidgetBoard does not use accounts, advertising, behavioral analytics SDKs, or third-party tracking.</p>
 
       <h2>Data the App Accesses</h2>
-      <p>Only with your permission, WidgetBoard accesses calendars, reminders, photos, and location. It uses this data to show the modules you select in the app and its widgets.</p>
+      <p>WidgetBoard accesses calendars, reminders, photos, and location only when a corresponding module is enabled, you choose Refresh Live Data, and you grant access. A photo module uses a reduced copy of your latest photo for widget display.</p>
 
       <h2>Processing and Storage</h2>
       <ul>
-        <li>Board settings, selected background images, and lightweight caches needed to display events and reminders are stored in an on-device App Group container.</li>
+        <li>Board settings, selected background images, and lightweight caches needed to display events, reminders, weather, and the latest photo are stored in an on-device App Group container.</li>
         <li>Your location or saved coordinates may be sent to Apple WeatherKit to retrieve weather information.</li>
         <li>Apple's App Store processes subscription purchases and restores. The WidgetBoard developer does not receive your complete payment details.</li>
       </ul>
@@ -63,7 +63,7 @@
       <p>The WidgetBoard developer does not collect personal data on developer-operated servers, sell it, or track you for advertising. Data is not shared with third parties except Apple services required to provide requested features.</p>
 
       <h2>Your Controls and Deletion</h2>
-      <p>You can change permissions at any time in iOS Settings and delete saved boards in the app. When you delete the app, iOS manages deletion of WidgetBoard data stored on the device.</p>
+      <p>You can change permissions at any time in iOS Settings. Live data stays on device until the next refresh, Clear Live Data Cache in the app, or app deletion. Clearing the cache removes events, reminders, weather, and the latest photo while keeping board settings and selected background images. You can delete saved boards separately in the app.</p>
 
       <h2>Contact</h2>
       <p>For privacy questions, use the <a href="https://github.com/naon77/widgetboard-support/issues">WidgetBoard Support issues page</a>. Do not include personal calendar, reminder, photo, or location data in a public post.</p>
